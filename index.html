@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-image: url('flight-header.jpg');
+            background-size: cover;
+            color: white;
+            padding: 50px;
+            text-align: center;
+        }
+
+        header h1, header p {
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background for better contrast */
+            padding: 10px;
+            display: inline-block;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        article {
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .flight {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .flight img {
+            max-width: 200px;
+            max-height: 200px;
+            margin-right: 20px;
+        }
+
+        .filter {
+            margin-bottom: 20px;
+        }
+
+        .filter label {
+            margin-right: 10px;
+        }
+
+        .search-field {
+            margin-bottom: 20px;
+        }
+
+        .search-field input {
+            padding: 8px;
+            width: 200px;
+        }
+
+        .sorting-filter {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Book Your Flight Now</h1>
+        <p>Explore the world with our convenient flight booking</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Flights</a>
+        <a href="#">Destinations</a>
+        <a href="#">Contact</a>
+    </nav>
+
+    <section>
+        <div class="filter">
+            <label for="destination">Filter by Destination:</label>
+            <select id="destination">
+                <option value="paris">Paris</option>
+                <option value="new-york">New York</option>
+                <option value="tokyo">Tokyo</option>
+            </select>
+        </div>
+
+        <div class="search-field">
+            <label for="search">Search:</label>
+            <input type="text" id="search" placeholder="Search flights...">
+        </div>
+
+        <div class="sorting-filter">
+            <label for="sort">Sort by:</label>
+            <select id="sort">
+                <option value="price">Price</option>
+                <option value="departure-time">Departure Time</option>
+            </select>
+        </div>
+
+        <div class="flight">
+            <img src="paris-flight.jpg" alt="Flight to Paris">
+            <div>
+                <h2>Flight to Paris</h2>
+                <p>Description of the flight. This can include text, images, and videos.</p>
+                <button>Book Now</button>
+            </div>
+            <p>$499.99</p>
+        </div>
+
+        <!-- More flights go here -->
+
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Your Flight Booking. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
